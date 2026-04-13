@@ -48,8 +48,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\Data\DbConnection.cs" />
-    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
-    <Compile Include="obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="dto\entities\Account.cs" />
+    <Compile Include="dto\entities\AuditLog.cs" />
+    <Compile Include="dto\entities\Classroom.cs" />
+    <Compile Include="dto\entities\Course.cs" />
+    <Compile Include="dto\entities\CourseClass.cs" />
+    <Compile Include="dto\entities\Department.cs" />
+    <Compile Include="dto\entities\Role.cs" />
+    <Compile Include="dto\entities\Schedule.cs" />
+    <Compile Include="dto\entities\Semester.cs" />
+    <Compile Include="dto\entities\Teacher.cs" />
+    <Compile Include="dto\viewmodels\ClassroomUsageViewModel.cs" />
+    <Compile Include="dto\viewmodels\ClassroomViewModel.cs" />
+    <Compile Include="dto\viewmodels\CourseClassViewModel.cs" />
+    <Compile Include="dto\viewmodels\CourseViewModel.cs" />
+    <Compile Include="dto\viewmodels\DepartmentViewModel.cs" />
+    <Compile Include="dto\viewmodels\LoginViewModel.cs" />
+    <Compile Include="dto\viewmodels\ScheduleViewModel.cs" />
+    <Compile Include="dto\viewmodels\TeacherViewModel.cs" />
+    <Compile Include="dto\viewmodels\TeachingLoadViewModel.cs" />
     <Compile Include="UI\Forms\Admin\QLPhanQuyen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,10 +147,6 @@
     <Compile Include="UI\UserControls\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="obj\Debug\CourseRegistration.Login.resources" />
-    <EmbeddedResource Include="obj\Debug\CourseRegistration.Properties.Resources.resources" />
-    <EmbeddedResource Include="obj\Debug\CourseRegistration.UI.Forms.Admin.XuatBaoCao.resources" />
-    <EmbeddedResource Include="obj\Debug\CourseRegistration.UI.UserControls.Menu.resources" />
     <EmbeddedResource Include="UI\Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,13 +165,6 @@
     <EmbeddedResource Include="UI\UserControls\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="bin\Debug\CourseRegistration.exe.config" />
-    <None Include="obj\Debug\CourseRegistration.csproj.AssemblyReference.cache" />
-    <None Include="obj\Debug\CourseRegistration.csproj.CoreCompileInputs.cache" />
-    <None Include="obj\Debug\CourseRegistration.csproj.GenerateResource.cache" />
-    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
-    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
-    <None Include="obj\Release\CourseRegistration.csproj.AssemblyReference.cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -168,28 +174,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="UI\Forms\PhongDaoTao\.gitkeep" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="bin\Release\" />
     <Folder Include="BLL\Services\" />
     <Folder Include="BLL\Validations\" />
     <Folder Include="DAL\Interfaces\" />
     <Folder Include="DAL\Repositories\" />
-    <Folder Include="DTO\Entities\" />
-    <Folder Include="DTO\ViewModels\" />
-    <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="UI\Utils\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="bin\Debug\CourseRegistration.exe" />
-    <Content Include="bin\Debug\CourseRegistration.pdb" />
-    <Content Include="obj\Debug\CourseRegistration.csproj.FileListAbsolute.txt" />
-    <Content Include="obj\Debug\CourseRegistration.exe" />
-    <Content Include="obj\Debug\CourseRegistration.pdb" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
