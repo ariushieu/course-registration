@@ -1,4 +1,4 @@
-﻿namespace CourseRegistration.UI.Forms.Admin
+﻿namespace CourseRegistration.UI.Forms.PhongDaoTao
 {
     partial class QLTKB
     {

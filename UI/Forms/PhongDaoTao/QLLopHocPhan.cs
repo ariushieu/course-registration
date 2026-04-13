@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CourseRegistration.UI.Forms.Admin
+namespace CourseRegistration.UI.Forms.PhongDaoTao
 {
-    public partial class QLTKB : Form
+    public partial class QLLopHocPhan : Form
     {
-        public QLTKB()
+        public QLLopHocPhan()
         {
             InitializeComponent();
         }

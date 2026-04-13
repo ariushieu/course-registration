@@ -48,6 +48,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAL\Data\DbConnection.cs" />
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="UI\Forms\Admin\QLLopHocPhan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +80,60 @@
     <Compile Include="UI\Forms\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Forms\PhongDaoTao\QLGiangVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\PhongDaoTao\QLGiangVien.Designer.cs">
+      <DependentUpon>QLGiangVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\PhongDaoTao\QLHocPhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\PhongDaoTao\QLHocPhan.Designer.cs">
+      <DependentUpon>QLHocPhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\PhongDaoTao\QLKhoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\PhongDaoTao\QLKhoa.Designer.cs">
+      <DependentUpon>QLKhoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\PhongDaoTao\QLLopHocPhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\PhongDaoTao\QLLopHocPhan.Designer.cs">
+      <DependentUpon>QLLopHocPhan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\PhongDaoTao\QLPhongHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\PhongDaoTao\QLPhongHoc.Designer.cs">
+      <DependentUpon>QLPhongHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\PhongDaoTao\QLTKB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\PhongDaoTao\QLTKB.Designer.cs">
+      <DependentUpon>QLTKB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\PhongDaoTao\XuatBaoCao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\PhongDaoTao\XuatBaoCao.Designer.cs">
+      <DependentUpon>XuatBaoCao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\Teacher\XemLichGiangDay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\Teacher\XemLichGiangDay.Designer.cs">
+      <DependentUpon>XemLichGiangDay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\Teacher\XemThongTinCaNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\Teacher\XemThongTinCaNhan.Designer.cs">
+      <DependentUpon>XemThongTinCaNhan.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UI\UserControls\Menu.cs">
@@ -86,6 +142,10 @@
     <Compile Include="UI\UserControls\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="obj\Debug\CourseRegistration.Login.resources" />
+    <EmbeddedResource Include="obj\Debug\CourseRegistration.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\CourseRegistration.UI.Forms.Admin.XuatBaoCao.resources" />
+    <EmbeddedResource Include="obj\Debug\CourseRegistration.UI.UserControls.Menu.resources" />
     <EmbeddedResource Include="UI\Forms\Admin\XuatBaoCao.resx">
       <DependentUpon>XuatBaoCao.cs</DependentUpon>
     </EmbeddedResource>
@@ -101,9 +161,19 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UI\Forms\PhongDaoTao\XuatBaoCao.resx">
+      <DependentUpon>XuatBaoCao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\UserControls\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="bin\Debug\CourseRegistration.exe.config" />
+    <None Include="obj\Debug\CourseRegistration.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\CourseRegistration.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\CourseRegistration.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Release\CourseRegistration.csproj.AssemblyReference.cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -113,19 +183,28 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="UI\Forms\PhongDaoTao\.gitkeep" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="bin\Release\" />
     <Folder Include="BLL\Services\" />
     <Folder Include="BLL\Validations\" />
     <Folder Include="DAL\Interfaces\" />
     <Folder Include="DAL\Repositories\" />
     <Folder Include="DTO\Entities\" />
     <Folder Include="DTO\ViewModels\" />
-    <Folder Include="UI\Forms\Students\" />
+    <Folder Include="obj\Debug\TempPE\" />
     <Folder Include="UI\Utils\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\CourseRegistration.exe" />
+    <Content Include="bin\Debug\CourseRegistration.pdb" />
+    <Content Include="obj\Debug\CourseRegistration.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\CourseRegistration.exe" />
+    <Content Include="obj\Debug\CourseRegistration.pdb" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

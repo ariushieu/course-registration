@@ -1,4 +1,4 @@
-﻿namespace CourseRegistration.UI.Forms.Admin
+﻿namespace CourseRegistration.UI.Forms.PhongDaoTao
 {
     partial class QLLopHocPhan
     {
@@ -53,7 +53,7 @@
             // 
             // gbInfo
             // 
-            this.gbInfo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.gbInfo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gbInfo.Controls.Add(this.txtSiSo);
             this.gbInfo.Controls.Add(this.lblSiSo);
@@ -136,7 +136,7 @@
             // 
             // gbAction
             // 
-            this.gbAction.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.gbAction.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gbAction.Controls.Add(this.btnSave);
             this.gbAction.Controls.Add(this.btnDelete);
@@ -187,8 +187,8 @@
             // 
             // gbData
             // 
-            this.gbData.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.gbData.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gbData.Controls.Add(this.dgvLopHocPhan);
             this.gbData.Location = new System.Drawing.Point(12, 174);
