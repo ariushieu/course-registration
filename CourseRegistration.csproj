@@ -48,7 +48,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\Services\AuthService.cs" />
     <Compile Include="DAL\Data\DbConnection.cs" />
+    <Compile Include="DAL\Interfaces\IAccountRepository.cs" />
+    <Compile Include="DAL\Repositories\AccountRepository.cs" />
     <Compile Include="dto\entities\Account.cs" />
     <Compile Include="dto\entities\AuditLog.cs" />
     <Compile Include="dto\entities\Classroom.cs" />
@@ -181,6 +184,8 @@
     <EmbeddedResource Include="UI\UserControls\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Database\ERD.md" />
+    <None Include="Database\README.md" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -195,11 +200,13 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BLL\Services\" />
     <Folder Include="BLL\Validations\" />
-    <Folder Include="DAL\Interfaces\" />
-    <Folder Include="DAL\Repositories\" />
     <Folder Include="UI\Utils\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Database\CreateDatabase.sql" />
+    <Content Include="Database\InsertSampleData.sql" />
+    <Content Include="Database\StoredProcedures.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

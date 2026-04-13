@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using CourseRegistration.DTO.Entities;
+using TeacherEntity = CourseRegistration.DTO.Entities.Teacher;
 
 namespace CourseRegistration.UI.Forms.PhongDaoTao
 {
@@ -12,7 +13,7 @@ namespace CourseRegistration.UI.Forms.PhongDaoTao
     /// </summary>
     public partial class QLGiangVien : Form
     {
-        private readonly List<Teacher> _teachers = new List<Teacher>();
+        private readonly List<TeacherEntity> _teachers = new List<TeacherEntity>();
         private int? _selectedTeacherId;
 
         private static readonly Regex EmailRegex = new Regex(@"^[^@\s]+@[^@\s]+\.[^@\s]+$", RegexOptions.Compiled);
@@ -59,7 +60,7 @@ namespace CourseRegistration.UI.Forms.PhongDaoTao
                 return;
             }
 
-            _teachers.Add(new Teacher
+            _teachers.Add(new TeacherEntity
             {
                 TeacherID = _teachers.Count == 0 ? 1 : _teachers.Max(x => x.TeacherID) + 1,
                 TeacherCode = txtMaGV.Text.Trim(),
@@ -273,7 +274,7 @@ namespace CourseRegistration.UI.Forms.PhongDaoTao
                 return;
             }
 
-            _teachers.Add(new Teacher
+            _teachers.Add(new TeacherEntity
             {
                 TeacherID = 1,
                 TeacherCode = "GV001",
@@ -288,7 +289,7 @@ namespace CourseRegistration.UI.Forms.PhongDaoTao
                 CreatedDate = DateTime.Now
             });
 
-            _teachers.Add(new Teacher
+            _teachers.Add(new TeacherEntity
             {
                 TeacherID = 2,
                 TeacherCode = "GV002",
@@ -304,7 +305,7 @@ namespace CourseRegistration.UI.Forms.PhongDaoTao
             });
         }
 
-        private void BindGrid(IEnumerable<Teacher> source)
+        private void BindGrid(IEnumerable<TeacherEntity> source)
         {
             dgvGiangVien.DataSource = source
                 .OrderBy(x => x.TeacherID)
