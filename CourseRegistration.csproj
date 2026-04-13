@@ -50,29 +50,17 @@
     <Compile Include="DAL\Data\DbConnection.cs" />
     <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="obj\Release\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
-    <Compile Include="UI\Forms\Admin\QLLopHocPhan.cs">
+    <Compile Include="UI\Forms\Admin\QLPhanQuyen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Forms\Admin\QLLopHocPhan.Designer.cs">
-      <DependentUpon>QLLopHocPhan.cs</DependentUpon>
+    <Compile Include="UI\Forms\Admin\QLPhanQuyen.Designer.cs">
+      <DependentUpon>QLPhanQuyen.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Forms\Admin\QLPhongHoc.cs">
+    <Compile Include="UI\Forms\Admin\QLTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\Forms\Admin\QLPhongHoc.Designer.cs">
-      <DependentUpon>QLPhongHoc.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Forms\Admin\QLTKB.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\Forms\Admin\QLTKB.Designer.cs">
-      <DependentUpon>QLTKB.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UI\Forms\Admin\XuatBaoCao.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="UI\Forms\Admin\XuatBaoCao.Designer.cs">
-      <DependentUpon>XuatBaoCao.cs</DependentUpon>
+    <Compile Include="UI\Forms\Admin\QLTaiKhoan.Designer.cs">
+      <DependentUpon>QLTaiKhoan.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Forms\Login.cs">
       <SubType>Form</SubType>
@@ -146,9 +134,6 @@
     <EmbeddedResource Include="obj\Debug\CourseRegistration.Properties.Resources.resources" />
     <EmbeddedResource Include="obj\Debug\CourseRegistration.UI.Forms.Admin.XuatBaoCao.resources" />
     <EmbeddedResource Include="obj\Debug\CourseRegistration.UI.UserControls.Menu.resources" />
-    <EmbeddedResource Include="UI\Forms\Admin\XuatBaoCao.resx">
-      <DependentUpon>XuatBaoCao.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UI\Forms\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
