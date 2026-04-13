@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <RuntimeIdentifiers>win</RuntimeIdentifiers>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -109,11 +110,23 @@
     <Compile Include="UI\Forms\PhongDaoTao\QLLopHocPhan.Designer.cs">
       <DependentUpon>QLLopHocPhan.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\Forms\PhongDaoTao\QLMonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\PhongDaoTao\QLMonHoc.Designer.cs">
+      <DependentUpon>QLMonHoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\Forms\PhongDaoTao\QLPhongHoc.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="UI\Forms\PhongDaoTao\QLPhongHoc.Designer.cs">
       <DependentUpon>QLPhongHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\PhongDaoTao\QLSinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\PhongDaoTao\QLSinhVien.Designer.cs">
+      <DependentUpon>QLSinhVien.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Forms\PhongDaoTao\QLTKB.cs">
       <SubType>Form</SubType>
@@ -159,6 +172,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="UI\Forms\PhongDaoTao\QLGiangVien.resx">
+      <DependentUpon>QLGiangVien.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\Forms\PhongDaoTao\XuatBaoCao.resx">
       <DependentUpon>XuatBaoCao.cs</DependentUpon>
     </EmbeddedResource>

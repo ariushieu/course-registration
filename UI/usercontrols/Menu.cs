@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CourseRegistration.UI.Forms.PhongDaoTao;
 
 namespace CourseRegistration.UI.UserControls
 {
@@ -17,6 +18,25 @@ namespace CourseRegistration.UI.UserControls
             InitializeComponent();
             // ApplyCustomColorTable(); // Loại bỏ vì không dùng MenuStrip
             HideAllSubMenus();
+            InitializeFeatureNavigation();
+        }
+
+        private void InitializeFeatureNavigation()
+        {
+            btnKhoa.Click += (s, e) => OpenFeatureForm(new QLKhoa());
+            btnMonHoc.Click += (s, e) => OpenFeatureForm(new QLMonHoc());
+            btnSinhVien.Click += (s, e) => OpenFeatureForm(new QLSinhVien());
+            btnGiangVien.Click += (s, e) => OpenFeatureForm(new QLGiangVien());
+            btnLopHocPhan.Click += (s, e) => OpenFeatureForm(new QLHocPhan());
+        }
+
+        private void OpenFeatureForm(Form form)
+        {
+            using (form)
+            {
+                form.StartPosition = FormStartPosition.CenterParent;
+                form.ShowDialog(this);
+            }
         }
 
         /* 
